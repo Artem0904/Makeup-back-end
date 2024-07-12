@@ -13,6 +13,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext(connStr);
 builder.Services.AddIdentity();
+builder.Services.AddRepositories();
 
 
 var app = builder.Build();
