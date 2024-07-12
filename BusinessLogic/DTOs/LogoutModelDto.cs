@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace BusinessLogic.DTOs
 {
-    internal class LogoutModelDto
+    public class LogoutModelDto
     {
+        public string RefreshToken { get; set; }
+
     }
 }
