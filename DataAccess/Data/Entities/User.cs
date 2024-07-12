@@ -11,5 +11,6 @@ namespace DataAccess.Data.Entities
     {
         public int UserTypeId { get; set; }
         public UserType UserType { get; set; }
+        public ICollection<Order>? Orders { get; set; } = new HashSet<Order>();
     }
 }
