@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace BusinessLogic.DTOs
 {
-    internal class UserDto
+    public class UserDto
     {
+        public int UserTypeId { get; set; }
+        public string UserTypeName { get; set; }
     }
 }

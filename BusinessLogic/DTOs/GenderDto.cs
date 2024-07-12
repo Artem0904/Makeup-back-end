@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace BusinessLogic.DTOs
 {
-    internal class GenderDto
+    public class GenderDto
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+
+
     }
 }
