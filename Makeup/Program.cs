@@ -1,4 +1,7 @@
 using DataAccess;
+using BusinessLogic;
+using BusinessLogic.Interfaces;
+using BusinessLogic.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +18,11 @@ builder.Services.AddDbContext(connStr);
 builder.Services.AddIdentity();
 builder.Services.AddRepositories();
 
+builder.Services.AddAutoMapper();
+builder.Services.AddFluentValidators();
+
+builder.Services.AddCustomServices();
+builder.Services.AddScoped<IProductsService, ProductsService>();
 
 var app = builder.Build();
 
